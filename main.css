@@ -1,0 +1,120 @@
+@charset "utf-8";
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #00d9ff;
+}
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 23px;
+    background-color: #333;
+    border-bottom: 4px solid silver;
+    z-index: 1000;
+}
+.navbar a{
+    font-weight: 700;
+    margin: 0 5px;
+    font-size: 130%;
+    color: white;
+    text-decoration: none;
+}
+.navbar a:hover {
+    color: #000000;
+    cursor: pointer;
+}
+.header{
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column; /* Выстраиваем flex-элементы в колонку, основная ось - Y  */
+    justify-content: center;
+    align-items: center;
+}
+.header-title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+.header-subtitle{
+    margin: 0;
+    padding: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.bio{
+    padding: 10px 10px 10px 10px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.bio p{
+    font-weight: 500;
+}
+footer {
+    font-weight: 500;
+    background-color: #333;
+    margin-top: 20px;
+    color: #ffffff;
+    padding: 23px;
+}
+.resume {
+    margin: 100px auto 20px;
+    width: 90%;
+    background-color: #fff;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 800;
+}
+.resume table th, .resume table td {
+    padding: 1px;
+    border: 1px solid #ddd;
+    word-break: break-all;
+}
+.resume table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.gallery {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 30px 10px;
+}
+.gallery h2 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.gallery section img {
+    width: 261px;
+    max-height: 190px;
+    margin: 10px;
+}
+
+.logo {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали */
+    align-items: center; /* Выравнивание по вертикали */
+}
+.logo img{
+    width: 300px;
+    margin: 10px;
+}
+@media(max-width: 370px){
+    .navbar a{
+        font-size: 100%;
+    }
+}
